@@ -1,4 +1,4 @@
-# LiveFireChallenges for CTFd (Need to update readme from the DynamicChallenges one :))
+# LiveFireChallenges for CTFd
 
 CTFd lacks funcitonality to adequately manage VM based CTF challenges. Vulnerable machines often
 need to be reverted to ensure exploitability.
