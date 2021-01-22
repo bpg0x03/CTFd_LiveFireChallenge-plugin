@@ -1,0 +1,35 @@
+{% extends "admin/challenges/create.html" %}
+
+{% block header %}
+<div class="alert alert-secondary" role="alert">
+	Livefire challenges add a revert button and revert timer to integrate with a VMWare vCenter backend for managing VM based challenges. The name of 
+	the snapshot should be "BASELINE"
+</div>
+{% endblock %}
+
+
+{% block value %}
+<div class="form-group">
+	<label for="value">Value<br>
+		<small class="form-text text-muted">
+			This is how many points the challenge is worth.
+		</small>
+	</label>
+	<input type="number" class="form-control" name="value" placeholder="Enter value" required>
+
+</div>
+
+<div class="form-group">
+	<label for="value">VMName<br>
+		<small class="form-text text-muted">
+			The name of the VM in the vCenter inventory
+		</small>
+	</label>
+	<input type="text" class="form-control" name="vmname" placeholder="Enter value" required>
+
+</div>
+{% endblock %}
+
+{% block type %}
+<input type="hidden" value="livefire" name="type" id="chaltype">
+{% endblock %}
